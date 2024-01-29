@@ -8,6 +8,5 @@ class Message(BaseModel):
 
 
 class ChatRequest(BaseModel):
-    chatHistory: List[Message]
-    question: str
-    sessionId: int = 12345
+    messages: List[Message]
+

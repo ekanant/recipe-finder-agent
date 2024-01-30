@@ -10,7 +10,9 @@
 ### 1. Create the venv
 - Use the command below to create the virtual environment 
 
-    ```python -m venv /path/to/new/virtual/environment```
+    ```python -m venv ./venv```
+    ```source ./venv/bin/activate```
+- 
 
 ### 2. Install the required packages
 - Use the command below. This will install all the packages listed in your requirements.txt file.

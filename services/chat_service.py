@@ -9,4 +9,4 @@ class ChatService(BaseService):
         # TODO: 2.2 - To create an agent
         # TODO: 2.3 - Create prompt template (which included chatHistory)
         # TODO: 2.4 - Invoke an agent
-        return ""
+        return "Mock Response"

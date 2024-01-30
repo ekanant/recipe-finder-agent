@@ -1,5 +1,5 @@
 from typing import Annotated
-from fastapi import Depends, APIRouter
+from fastapi import Depends, APIRouter, Response
 
 from models.chat_request import ChatRequest
 from services.base_service import BaseService
@@ -15,4 +15,6 @@ router = APIRouter(
 @router.post("")
 async def chat(request: ChatRequest, chat_service: Annotated[BaseService, Depends(ChatService)]):
     #TODO: 1
-    return "Implement service class"
+    response = chat_service.execute(request=request)
+
+    return Response(str(response))

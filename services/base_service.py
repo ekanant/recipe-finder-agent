@@ -1,8 +1,7 @@
 from models.chat_request import ChatRequest
-from models.chat_response import ChatResponse
 
 
 class BaseService:
-    def execute(self, request: ChatRequest) -> ChatResponse:
+    def execute(self, request: ChatRequest):
         """Overrides chat() here"""
         pass
